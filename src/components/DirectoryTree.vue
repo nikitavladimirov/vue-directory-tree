@@ -1,32 +1,23 @@
 <template>
   <div>
-    <ul>
-      <li>
-        <directories
-          :directory='root'
-        >
-        </directories>
-      </li>
-    </ul>
+    <dir-item
+      :treeData='dataJSON.contents'
+    >
+      {{ dataJSON.name }}
+    </dir-item>
   </div>
 </template>
 
 <script>
-import root from "../../public/static/node_modules.json"
-import Directories from "./Directories.vue"
+import JSON from "../../public/static/node_modules.json"
+import DirItem from "./DirItem/DirItem.vue"
 export default {
-  components: { Directories },
+  components: {DirItem},
   name: 'DirectoryTree',
   data: () => {
     return {
-      root: root
+      dataJSON: JSON
     }
   },
 }
 </script>
-
-<style scoped>
-ul, li {
-  list-style-type: none;
-}
-</style>
