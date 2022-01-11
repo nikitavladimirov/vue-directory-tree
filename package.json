@@ -1,6 +1,6 @@
 {
   "name": "folder-tree-component",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -36,7 +36,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
+    "last 5 versions",
     "not dead"
   ]
 }
